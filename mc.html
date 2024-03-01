@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+h1 {text-align: center;}
+h2{text-align:center;}
+h3{text-align:center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+<center>
+    <title> Mc Donalds 🍟</title>
+</center>
+   <h1> Mc Donalds </h1>
+    <h2>Food Ordering on Mc donalds🍟</h2>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+
+            <h1>Come to the delicious city😋</h1>
+            <p>Order your favorite food on online⛷️!!</p>
+        </div>
+    </header>
+
+    <section class="menu">
+        <div class="container">
+            <h2>Menu</h2>
+            <div class="menu-item">
+                <img src="https://www.shutterstock.com/image-photo/bangkok-thailand-february-14-2019-260nw-1465952723.jpg" alt="Food 1">
+                <h3>French Fries</h3>
+                <p>Our French fries are made with high-quality potatoes, carefully selected for their taste and texture</p>
+                <span>$100/-</span>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="C:\Users\MY PC\3D Objects\HD-wallpaper-mcdonalds-double-cheese-burger-double-mcdonalds-cheese-burger.jpg"width="400" 
+     height="400", alt="Food 2">
+                <h3>Burger</h3>
+                <p>A burger typically contains a beef patty, lettuce, tomato, pickles, onions, cheese, ketchup, and mayonnaise in a bun.</p>
+                <span>$120/-</span>
+                <button>Add to Cart</button>
+            </div>
+           <div class="menu-item">
+          <img src="https://www.goodmart.ind.in/securepanel/upload/item/GV221078tandoori-paneer-pizza--28small-size-29.jpg",alt="Food 3">
+           <h3>Pizza</h3>
+            <p>tomato sauce, melted cheese, and various toppings such as pepperoni, mushrooms, onions, and bell peppers</p>
+           <span>$130/-</span>
+           <button>Add to cart</button>
+          </div>
+            <!-- Add more menu items as needed -->
+        </div>
+    </section>
+
+    <section class="cart">
+        <div class="container">
+            <h2>Cart</h2>
+            <ul>
+                <!-- Cart items will be added dynamically using JavaScript -->
+            </ul>
+            <div class="total">
+                <h3>Total:</h3>
+                <span>$0</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Online Food Ordering. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "7b92e2d5-8aa7-41a7-8cfe-a1cfc859c029", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "c11ff035-1cf3-488e-83cd-260f1f8b5a57", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
+
+
